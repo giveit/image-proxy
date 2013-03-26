@@ -47,7 +47,7 @@ app.get('/:url/:width/:height', function (req, res, next) {
           // @see http://nodejs.org/api/http.html#http_request_headers
           var mimeType = res2.headers['content-type'].replace(/;.+/, '');
           if (mimeTypes.indexOf(mimeType) === -1) {
-            return res.send('Expected content type ' + mimeTypes.join(', ') + ', got ' + mimeType, 404);
+            //return res.send('Expected content type ' + mimeTypes.join(', ') + ', got ' + mimeType, 404);
           }
 
           // @see https://github.com/aheckmann/gm#constructor
