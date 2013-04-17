@@ -70,7 +70,7 @@ app.get('/:url/:width/:height', function (req, res, next) {
         }).on('error', next);
 
       // Timeout after five seconds. Better luck next time.
-      request.setTimeout(5000, function () {
+      request.setTimeout(10000, function () {
         return res.send(504);
       });
     };
